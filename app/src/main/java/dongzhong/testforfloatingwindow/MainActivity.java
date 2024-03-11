@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == 0) {
             if (!Settings.canDrawOverlays(this)) {
                 Toast.makeText(this, "授权失败", Toast.LENGTH_SHORT).show();
+		// test first commit
             } else {
                 Toast.makeText(this, "授权成功", Toast.LENGTH_SHORT).show();
                 startService(new Intent(MainActivity.this, FloatingButtonService.class));
